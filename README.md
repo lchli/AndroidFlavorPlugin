@@ -9,7 +9,7 @@ https://github.com/GavinCT/AndroidMultiChannelBuildTool
 https://github.com/chrisbanes/gradle-mvn-push
 
 ## Usage
-### (1)In root project build.gradle
+### (1)in root project build.gradle
 
 ```groovy
 
@@ -23,7 +23,7 @@ depedencies {
 
 ```
 
-### (2)In app/build.gradle
+### (2)in app/build.gradle
 
 ```groovy
 
