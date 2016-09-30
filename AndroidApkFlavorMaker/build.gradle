@@ -10,8 +10,8 @@ repositories {
     mavenLocal()
 }
 
-//defaultTasks 'clean','uploadArchives'
-defaultTasks 'clean','build'
+defaultTasks 'clean','uploadArchives'
+//defaultTasks 'clean','build'
 
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.4.4'
@@ -27,6 +27,10 @@ sourceSets {
             ]
         }  // compile everything in src/ with groovy
         java { srcDirs = []}    // no source dirs for the java compiler
+
+        resources {
+            srcDir 'src/main/resources'
+        }
 
     }
 }
