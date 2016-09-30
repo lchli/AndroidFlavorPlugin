@@ -1,0 +1,42 @@
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+apply plugin: "maven"
+
+sourceCompatibility = 1.6
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+defaultTasks 'clean','uploadArchives'
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.4'
+    compile gradleApi()
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+sourceSets {
+    main {
+        groovy {
+            srcDirs = [
+                    'src/main/groovy',
+                    'src/main/java'
+            ]
+        }  // compile everything in src/ with groovy
+        java { srcDirs = []}    // no source dirs for the java compiler
+
+    }
+}
+
+apply from: './gradle-mvn-push.gradle'
+
+//
+//uploadArchives {
+//    repositories {
+//        mavenDeployer {
+//            repository(url: uri('../repo'))
+//        }
+//    }
+//}
