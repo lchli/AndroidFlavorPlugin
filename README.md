@@ -43,3 +43,9 @@ android {
 }
 
 ```
+### (3)build.
+```groovy
+
+$ gradle clean build makeApkFlavors
+
+```
