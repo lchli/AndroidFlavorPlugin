@@ -11,7 +11,7 @@ repositories {
 }
 
 //defaultTasks 'clean','uploadArchives'
-defaultTasks 'clean'
+defaultTasks 'clean','build'
 
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.4.4'
