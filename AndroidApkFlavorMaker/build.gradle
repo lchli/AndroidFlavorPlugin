@@ -10,7 +10,8 @@ repositories {
     mavenLocal()
 }
 
-defaultTasks 'clean','uploadArchives'
+//defaultTasks 'clean','uploadArchives'
+defaultTasks 'clean'
 
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.4.4'
