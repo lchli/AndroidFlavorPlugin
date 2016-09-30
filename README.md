@@ -49,3 +49,6 @@ android {
 $ gradle clean build makeApkFlavors
 
 ```
+### (4)channel util.
+
+**[ChannelUtil](https://github.com/lchli/AndroidFlavorPlugin/blob/master/AndroidApkFlavorMaker/channelUtils/ChannelUtil.java)**
