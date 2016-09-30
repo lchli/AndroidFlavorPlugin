@@ -1,6 +1,6 @@
 # AndroidFlavorPlugin
 
-This is a android apk flavor package maker gradle plugin.
+This is a android apk flavor maker gradle plugin.
 
 ## Thanks
 
