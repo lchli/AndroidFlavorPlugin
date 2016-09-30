@@ -32,7 +32,7 @@ apply plugin: 'com.lchli.makeApkFlavor'
 
 android {
    ...
-   
+   //config flavor output dir,channel.txt,sourceApkName.
     LiAnPlugin{
         flavorApksDir="${buildDir}/flavorApks"
         flavorChannelFilePath="${buildDir.parent}/channel.txt"
@@ -49,6 +49,20 @@ android {
 $ gradle clean build makeApkFlavors
 
 ```
-### (4)channel util.
+### channel util.
 
 **[ChannelUtil](https://github.com/lchli/AndroidFlavorPlugin/blob/master/AndroidApkFlavorMaker/channelUtils/ChannelUtil.java)**
+
+### channel.txt must like below,each line replace a channel name:
+
+```groovy
+samsungapps
+hiapk
+anzhi
+360cn
+
+```
+
+
+
+
