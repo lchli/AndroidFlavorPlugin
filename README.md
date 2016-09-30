@@ -49,11 +49,11 @@ android {
 $ gradle clean build makeApkFlavors
 
 ```
-### channel util.
+## channel util.
 
 **[ChannelUtil](https://github.com/lchli/AndroidFlavorPlugin/blob/master/AndroidApkFlavorMaker/channelUtils/ChannelUtil.java)**
 
-### channel.txt must like below,each line replace a channel name:
+## channel.txt must like below,each line replace a channel name:
 
 ```groovy
 samsungapps
